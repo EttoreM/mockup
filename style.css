@@ -1,0 +1,346 @@
+@font-face {
+  font-family: 'Fedra';
+  src: url('./fonts/Fedra_Sans_Book.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Roboto';
+}
+
+.PageContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('./imgs/bkg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow-y: scroll;
+}
+
+.PageContainer1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('./imgs/map_gray.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow-y: scroll;
+}
+
+.WelcomeMessage {
+  position: fixed;
+  top: 16.7vw;
+  left: 0vw;
+  font-size: 2.4215vw;
+  font-family: 'Fedra', sans-serif;
+  font-weight: 500;
+  color: whitesmoke;
+  padding: 2.505vw;
+  width: 33%;
+  text-shadow: 0.1rem 0.1rem 0.1rem black;
+  text-align: center;
+  line-height: 2.7555vw;
+  border-radius: 0vw;
+  text-align: left;
+  line-height: 2.9225vw;
+}
+
+button {
+  border-radius: 0.2505vw;
+  padding: 0.4175vw 0.835vw;
+  color: white;
+  font-size: 1.0855vw;
+  border: none;
+  min-width: 5vw;
+}
+
+.DHSlogo {
+  position: fixed;
+  top: 0rem;
+  width: 16.7vw;
+}
+
+.NERClogo {
+  position: fixed;
+  top: 0vw;
+  right: 0.835vw;
+  background-color: rgba(0,0,0,0.3);
+  padding: 0.835vw 0.835vw;
+  display: flex;
+}
+
+.Option1_1,
+.Option2_1,
+.Option3_1,
+.Option1_2,
+.Option2_2,
+.Option3_2,
+.Option1_3,
+.Option2_3,
+.Option3_3,
+.Option1_4,
+.Option2_4,
+.Option3_4 {
+  color: white;
+  font-size: 1.2525vw;
+  width: 14.6125vw;
+  height: 2.505vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.2505vw 0vw;
+  cursor: default;
+  position: fixed;
+  left: 0.835vw;
+}
+
+.Option1_1:hover,
+.Option2_1:hover,
+.Option3_1:hover,
+.Option1_2:hover,
+.Option2_2:hover,
+.Option3_2:hover,
+.Option1_3:hover,
+.Option2_3:hover,
+.Option3_3:hover,
+.Option1_4:hover,
+.Option2_4:hover,
+.Option3_4:hover {
+  box-shadow: 0rem 0rem 0.4rem rgba(0,0,0,0.7);
+}
+
+.Option1_1,
+.Option1_2 {
+  position: fixed;
+  top: 9vw;
+  background-color: rgb(57, 56, 139, 0.8);
+}
+
+.Option2_1 {
+  position: fixed;
+  top: 12vw;
+  background-color: rgba(61, 134, 65, 0.8);
+}
+
+.Option3_1 {
+  position: fixed;
+  top: 15vw;
+  background-color: rgba(99, 61, 134, 0.8);
+}
+
+.Option2_2 {
+  position: fixed;
+  bottom: 4vw;
+  background-color: rgba(61, 134, 65, 0.8);
+}
+
+.Option3_2 {
+  position: fixed;
+  bottom: 1vw;
+  background-color: rgba(99, 61, 134, 0.8);
+}
+
+.Option1_4 {
+  position: fixed;
+  bottom: 4vw;
+  background-color:  rgb(57, 56, 139, 0.8);
+}
+
+.Option2_4 {
+  position: fixed;
+  top: 9vw;
+  background-color: rgba(61, 134, 65, 0.8);
+}
+
+.EnterButton {
+  background-color: green;
+  position: fixed;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0rem 0rem 0.5rem rgba(0,0,0,0.7);
+  font-size: 1.5vw;
+  padding: 0.5845vw 2.5vw;
+}
+
+.EnterButton:hover {
+  background-color: rgb(0, 150, 0);
+}
+
+.Question1, .Question2 {
+  border-radius: 2.5vw;
+  background-color: rgb(57, 56, 139, 0.8);
+  width: 12.1vw !important;
+  color: white;
+  padding: 0.4175vw 1.2525vw;
+  word-wrap: break-word;
+  font-size: 0.7515vw;
+  cursor: default;
+  position: fixed;
+  left: 0.835vw;
+}
+
+.Question1 {
+  top: 12.5vw;
+}
+
+.Question2 {
+  top: 15.5vw;
+}
+
+.Question1:hover, .Question2:hover {
+  box-shadow: 0vw 0vw 0.334vw rgba(0,0,0,0.7);
+}
+
+.BluePanel{
+  position: fixed;
+  top:16vw;
+  left:0.835vw;
+  width: 13.7775vw;
+  background-color: rgb(57, 56, 139, 0.5);
+  padding:0.4175vw;
+  font-size: 0.668vw;
+  color: white;
+  display: "flex";
+  flex-direction: column;
+  justify-content: left;
+}
+
+.BluePanelItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.BluePanelRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding:0rem 0.5rem;
+}
+
+.GreenPanel{
+  position: fixed;
+  top:12.5vw;
+  left:0.835vw;
+  width: 13.7775vw;
+  padding:0.4175vw;
+  background-color: rgba(61, 134, 65, 0.5);
+  font-size: 0.9185vw;
+  color: white;
+  display: "flex";
+  flex-direction: row;
+  min-height: 16.7vw;
+  cursor: default;
+}
+
+.GreenPanelItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 0.668vw;
+  padding: 0vw 0.4174vw;
+}
+
+.GreenDS {
+  border-radius: 3rem;
+  background-color: rgba(61, 134, 65, 0.3);
+  color: white;
+  padding: 0.4174vw 0.835vw;
+  display: inline-flex;
+  margin: 0.2505vw 0.0835vw;
+  max-width: 5.845vw;
+  font-size: 0.835vw;
+}
+
+.GreenDS:hover {
+  box-shadow: 0vw 0vw 0.334vw rgba(0,0,0,0.5);
+}
+
+.BlueDS {
+  border-radius: 2.505vw;
+  background-color: rgb(57, 56, 139, 0.5);
+  color: white;
+  padding: 0.4175vw 0.835vw;
+  display: inline-flex;
+  margin: 0.2505vw 0.0835vw;
+  max-width: 7rem;
+  font-size: 0.835vw;
+}
+
+.SearchBar {
+  position: fixed;
+  top: 1.67vw;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 25vw;
+  /* height: 2rem; */
+  border-radius: 2.505vw;
+  border: 0.1vw solid rgb(61, 134, 65);
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 0.4175vw 1.2525vw;
+}
+
+.InputSearch, .InputSearch:focus {
+  border: none;
+  outline: none ! important;
+  font-size: 1vw;
+  width:100%;
+}
+
+.SearchIcon {
+  background-color: transparent;
+  padding:0.5845vw;
+  border-radius: 50%;
+  margin: -0.2505vw;
+  margin-right: -1.044vw
+}
+
+.SearchIcon:hover {
+  background-color: lightgrey;
+}
+
+.searchResultContainer {
+  position: fixed;
+  top:4.8vw;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 25.05vw;
+  background-color: rgba(61, 134, 65, 0.5);
+  border-radius: 0.4175vw;
+  padding: 0.2505vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.searchResultItem {
+  background-color: white;
+  height:1.67vw;
+  border-radius: 0.2505vw;
+  padding: 0.4175vw 0.5845vw;
+  display: flex;
+  align-items: center;
+  font-size: 1vw;
+  margin: 0.0835vw;
+  cursor: default;
+}
+
+.searchResultItem:hover {
+  background-color: rgb(57, 56, 139, 0.5);
+  color: white;
+}
+

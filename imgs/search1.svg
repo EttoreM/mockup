@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="135mm"
+   height="135mm"
+   viewBox="0 0 135 135"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="search1.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.69664703"
+     inkscape:cx="396.90114"
+     inkscape:cy="560.54212"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;stroke:#646464;stroke-width:13.2292;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path846"
+       sodipodi:type="arc"
+       sodipodi:cx="53.231449"
+       sodipodi:cy="53.554478"
+       sodipodi:rx="46.093689"
+       sodipodi:ry="46.093689"
+       sodipodi:start="2.0868101"
+       sodipodi:end="2.0816495"
+       sodipodi:arc-type="arc"
+       d="M 30.488045,93.646444 A 46.093689,46.093689 0 0 1 13.110174,30.862817 46.093689,46.093689 0 0 1 75.871328,13.40396 46.093689,46.093689 0 0 1 93.411142,76.142538 46.093689,46.093689 0 0 1 30.695246,93.763279"
+       sodipodi:open="true" />
+    <path
+       style="fill:none;stroke:#646464;stroke-width:13.2292;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 91.180026,91.384907 127.99866,128.20356"
+       id="path1569" />
+  </g>
+</svg>
