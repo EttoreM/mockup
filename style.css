@@ -18,29 +18,33 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  overflow-y: scroll;
+}
+
+.bkg_map_1 {
   background: url('./imgs/bkg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  overflow-y: scroll;
 }
 
-.PageContainer1 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.bkg_map_2 {
   background: url('./imgs/map_gray.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  overflow-y: scroll;
 }
+.bkg_map_3 {
+  background: url('./imgs/map_mcr.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 
 .WelcomeMessage {
   position: fixed;
-  top: 16.7vw;
+  top: 7.5vw;
   left: 0vw;
   font-size: 2.4215vw;
   font-family: 'Fedra', sans-serif;
@@ -80,18 +84,12 @@ button {
   display: flex;
 }
 
-.Option1_1,
-.Option2_1,
-.Option3_1,
-.Option1_2,
-.Option2_2,
-.Option3_2,
-.Option1_3,
-.Option2_3,
-.Option3_3,
-.Option1_4,
-.Option2_4,
-.Option3_4 {
+.Option1_up,
+.Option2_up,
+.Option3_up,
+.Option1_down,
+.Option2_down,
+.Option3_down {
   color: white;
   font-size: 1.2525vw;
   width: 14.6125vw;
@@ -103,101 +101,118 @@ button {
   cursor: default;
   position: fixed;
   left: 0.835vw;
+  transition: all 0.2s;
 }
 
-.Option1_1:hover,
-.Option2_1:hover,
-.Option3_1:hover,
-.Option1_2:hover,
-.Option2_2:hover,
-.Option3_2:hover,
-.Option1_3:hover,
-.Option2_3:hover,
-.Option3_3:hover,
-.Option1_4:hover,
-.Option2_4:hover,
-.Option3_4:hover {
-  box-shadow: 0rem 0rem 0.4rem rgba(0,0,0,0.7);
+.Option1_up:hover,
+.Option2_up:hover,
+.Option3_up:hover,
+.Option1_down:hover,
+.Option2_down:hover,
+.Option3_down:hover {
+  box-shadow: 0rem 0rem 0.2vw rgba(0,0,0,0.7);
+  left: 1.1vw;
+  transition: all 0.2s;
 }
 
-.Option1_1,
-.Option1_2 {
+.Option1_up {
   position: fixed;
-  top: 9vw;
-  background-color: rgb(57, 56, 139, 0.8);
+  top: 7vw;
+  background-color: rgb(57, 56, 139, 0.95);
 }
 
-.Option2_1 {
+.Option2_up {
   position: fixed;
-  top: 12vw;
-  background-color: rgba(61, 134, 65, 0.8);
+  top: 10vw;
+  background-color: rgba(61, 134, 65, 0.95);
 }
 
-.Option3_1 {
+.Option3_up {
   position: fixed;
-  top: 15vw;
-  background-color: rgba(99, 61, 134, 0.8);
+  top: 13vw;
+  background-color: rgba(99, 61, 134, 0.95);
 }
 
-.Option2_2 {
+.Option2_down {
   position: fixed;
   bottom: 4vw;
-  background-color: rgba(61, 134, 65, 0.8);
+  background-color: rgba(61, 134, 65, 0.95);
 }
 
-.Option3_2 {
+.Option3_down {
   position: fixed;
   bottom: 1vw;
-  background-color: rgba(99, 61, 134, 0.8);
+  background-color: rgba(99, 61, 134, 0.95);
 }
 
-.Option1_4 {
+.Option1_down {
   position: fixed;
   bottom: 4vw;
-  background-color:  rgb(57, 56, 139, 0.8);
+  background-color:  rgb(57, 56, 139, 0.95);
 }
 
-.Option2_4 {
+.EnterButton, .RegisterButton {
+  background-color: rgba(99, 61, 134, 1);
+  /* background-color: green; */
   position: fixed;
-  top: 9vw;
-  background-color: rgba(61, 134, 65, 0.8);
-}
-
-.EnterButton {
-  background-color: green;
-  position: fixed;
-  top: 70%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0rem 0rem 0.5rem rgba(0,0,0,0.7);
   font-size: 1.5vw;
   padding: 0.5845vw 2.5vw;
+  border-radius: 3vw;
+  width: 20vw;
+  transition: all 0.2s;
 }
 
-.EnterButton:hover {
-  background-color: rgb(0, 150, 0);
+.RegisterButton {
+  top: 90%;
+  width: 15vw;
+  font-size: 1.2vw;
+}
+
+.EnterButton:hover, .RegisterButton:hover {
+  /* background-color: rgb(0, 150, 0); */
+  background-color: #1f733b;
+  transition: all 0.2s;
+}
+
+.LoginButton {
+  background-color: white;
+  border: 0.2vw solid rgba(99, 61, 134, 1);
+  color: rgba(99, 61, 134, 1);
+  /* background-color: green; */
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0rem 0rem 0.5rem rgba(0,0,0,0.7);
+  font-size: 1.5vw;
+  padding: 0.5845vw 2.5vw;
+  border-radius: 3vw;;
+  width: 20vw;
 }
 
 .Question1, .Question2 {
   border-radius: 2.5vw;
-  background-color: rgb(57, 56, 139, 0.8);
-  width: 12.1vw !important;
+  background-color: rgb(57, 56, 139, 0.9);
+  width: 10.7775vw; 
   color: white;
   padding: 0.4175vw 1.2525vw;
   word-wrap: break-word;
   font-size: 0.7515vw;
   cursor: default;
-  position: fixed;
-  left: 0.835vw;
+  /* position: fixed; */
 }
 
-.Question1 {
-  top: 12.5vw;
+/* .Question1 {
+  top: 10.5vw;
 }
 
 .Question2 {
-  top: 15.5vw;
-}
+  top: 14.7vw;
+} */
 
 .Question1:hover, .Question2:hover {
   box-shadow: 0vw 0vw 0.334vw rgba(0,0,0,0.7);
@@ -205,17 +220,20 @@ button {
 
 .BluePanel{
   position: fixed;
-  top:16vw;
+  top:9.75vw;
   left:0.835vw;
   width: 13.7775vw;
-  background-color: rgb(57, 56, 139, 0.5);
+  background-color: rgb(57, 56, 139, 0.7);
   padding:0.4175vw;
   font-size: 0.668vw;
   color: white;
-  display: "flex";
-  flex-direction: column;
+  display: flex;
+  flex-flow: column wrap;
   justify-content: left;
+  min-height: 16.7vw;
+  align-items: center;
 }
+
 
 .BluePanelItem {
   display: flex;
@@ -233,7 +251,7 @@ button {
 
 .GreenPanel{
   position: fixed;
-  top:12.5vw;
+  top:12.75vw;
   left:0.835vw;
   width: 13.7775vw;
   padding:0.4175vw;
@@ -255,14 +273,17 @@ button {
 }
 
 .GreenDS {
-  border-radius: 3rem;
+  border-radius: 2vw;
   background-color: rgba(61, 134, 65, 0.3);
   color: white;
   padding: 0.4174vw 0.835vw;
   display: inline-flex;
   margin: 0.2505vw 0.0835vw;
   max-width: 5.845vw;
-  font-size: 0.835vw;
+  font-size: 0.8vw;
+  width: 35%;
+  justify-content: center;
+  text-align: center;
 }
 
 .GreenDS:hover {
@@ -270,14 +291,7 @@ button {
 }
 
 .BlueDS {
-  border-radius: 2.505vw;
   background-color: rgb(57, 56, 139, 0.5);
-  color: white;
-  padding: 0.4175vw 0.835vw;
-  display: inline-flex;
-  margin: 0.2505vw 0.0835vw;
-  max-width: 7rem;
-  font-size: 0.835vw;
 }
 
 .SearchBar {
@@ -285,8 +299,6 @@ button {
   top: 1.67vw;
   left: 50%;
   transform: translateX(-50%);
-  width: 25vw;
-  /* height: 2rem; */
   border-radius: 2.505vw;
   border: 0.1vw solid rgb(61, 134, 65);
   background-color: white;
@@ -295,11 +307,11 @@ button {
   padding: 0.4175vw 1.2525vw;
 }
 
-.InputSearch, .InputSearch:focus {
+.InputSearch {
   border: none;
   outline: none ! important;
   font-size: 1vw;
-  width:100%;
+  width: 25vw;
 }
 
 .SearchIcon {
