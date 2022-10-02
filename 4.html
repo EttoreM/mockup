@@ -3,31 +3,132 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="PageContainer bkg_map_2">
+    <div class="PageContainer bkg_map_3">
 
-      <div class="SearchBar"><input class="InputSearch" placeholder="Search..."><img src="./imgs/search.svg" style="width:1.3rem;" /></div>
 
-      <div class="Option1_up" onclick="location.href = '2.html'">Ask a question</div>
-
-      <div class="GreenPanel">
-        <div class="GreenDS" onclick="location.href = '5.html'">Flooding</div>
-        <div class="GreenDS">Heat</div>
-        <div class="GreenDS">Air Quality</div>
-        <div class="GreenDS">Pollutants</div>
-        <div class="GreenDS">Gov agency maps</div>
-        <div class="GreenDS">Admin</div>
-      </div>
-
-      <div class="Option2_up" onclick="location.href = '4.html'">Explore more</div>
-      <div class="Option3_down">Create a model</div>
-
-      <img src="./imgs/DSH_logo_3.png" onclick="location.href = 'index.html'" class="DHSlogo" />
-
+      <!-- Top logos -->
+      <img
+        src="./imgs/DSH_logo_3.png"
+        onclick="location.href = 'index.html'"
+        class="DHSlogo"
+      />
       <div class="NERClogo">
-        <img src="./imgs/NERC_logo.png" style="width:10.02vw" />
+        <img src="./imgs/NERC_logo.png" style="width: 9vw;" />
         <div style="width: 0.835rem; display: flex;"></div>
-        <img src="./imgs/UOM_logo.png" style="width:7.515vw;" />
+        <img src="./imgs/UOM_logo.png" style="width: 6.5vw; height: auto;" />
       </div>
+
+
+      <!-- Search Bar -->
+      <div class="SearchBar">
+        <input class="InputSearch" placeholder="Search..." />
+        <div class="SearchIcon">
+          <img src="./imgs/search.svg" style="width: 1.0855vw;" />
+        </div>
+      </div>
+
+
+       <!-- Login / Register / Logout -->
+       <div class="LoginButtonSmall">Login</div>
+
+
+      <!-- Options -->
+      <div class="Option1_up" onclick="location.href = '2.html'">
+        <span style="display: block; font-size: 0.8vw;">I want to</span> Know more about
+      </div>
+      <div class="Option2_down">
+        <span style="display: block; font-size: 0.8vw;">I want to</span> Explore more
+      </div>
+
+
+      <!-- Questions -->
+      <div class="Question Q1_up" onclick="location.href = '3.html'">
+        <b>Q</b>: What is my <b>personal exposure estimate</b> according to my location?
+      </div>
+
+
+      <!-- Search PostCoder -->
+      <div class="SearchPC_down">
+        <input class="InputPC" placeholder="Enter location..." />
+        <div class="SearchIconPC">
+          <img src="./imgs/search.svg" style="width: 1.0855vw;" onclick="location.href = '4.html'" />
+        </div>
+      </div>
+
+
+      <!-- Blue panel -->
+      <div class="BluePanel">
+        <div class="BluePanelItem">
+          <div class="BluePanelRow">
+            <img src="./imgs/switch_on.svg" style="width: 1.5vw;" />
+            <div style="width: 1vw;"></div>
+            <p style="width:80%;">Exposure to PM2.5</p>
+            <div style="width: 5.5vw;"></div>
+            <img src="./imgs/info.png" style="width: 1vw; cursor: pointer;" onclick="location.href = '5.html'" />
+          </div>
+          <div class="BluePanelRow">
+            <div style="width: 7vw;"></div>
+            <img src="./imgs/slider.svg" style="width: 4vw;" />
+          </div>
+        <!-- <hr style="opacity: 0.3; margin-top: 0.835rem;" /> -->
+        <div class="BluePanelItem">
+          <div class="BluePanelRow">
+            <img src="./imgs/switch_off.svg" style="width: 1.5vw;" />
+            <div style="width: 1vw;"></div>
+            <p style="width:80%;">Exposure to NO2</p>
+            <div style="width: 5.5vw;"></div>
+            <img src="./imgs/info.png" style="width: 1vw;" />
+          </div>
+        <!-- <hr style="opacity: 0.3; margin-top: 0.835rem;" /> -->
+        <div class="BluePanelItem">
+          <div class="BluePanelRow">
+            <img src="./imgs/switch_off.svg" style="width: 1.5vw;" />
+            <div style="width: 1vw;"></div>
+            <p style="width:80%;">Exposure to Ozone</p>
+            <div style="width: 5.0vw;"></div>
+            <img src="./imgs/info.png" style="width: 1vw;" />
+          </div>
+        </div>
+        <!-- <hr style="opacity: 0.3; margin-top: 0.835rem;" /> -->
+        <div class="BluePanelItem">
+          <div class="BluePanelRow">
+            <img src="./imgs/switch_off.svg" style="width: 1.5vw;" />
+            <div style="width: 1vw;"></div>
+            <p style="width:80%;">Vulnerability to air pollution (by age group)</p>
+            <div style="width: 1vw;"></div>
+            <img src="./imgs/info.png" style="width: 1vw;" />
+          </div>
+        </div>
+
+        <!-- <hr style="opacity: 0.3; margin-top: 0.835rem;" /> -->
+        <div class="BluePanelItem">
+          <div class="BluePanelRow">
+            <img src="./imgs/switch_off.svg" style="width: 1.5vw;" />
+            <div style="width: 1vw;"></div>
+            <p style="width:80%;">Vulnerability to air pollution (by underlying health consitions)</p>
+            <div style="width: 1vw;"></div>
+            <img src="./imgs/info.png" style="width: 1vw;" />
+          </div>
+
+        </div>
+
+        <div style="height: 0.9rem;"></div>
+      </div>
+
+      <!-- Slider -->
+      <div class="Slider">
+        <img src="./imgs/slider.png" style="width: 13vw;" />
+      </div>
+
+      <!-- Learn More -->
+      <div class="LearnMore">Learn More</div>
+
+
+      <!-- Legend -->
+      <div class="Legend">
+        <img src="./imgs/legend.png" style="width: 15vw;"/>
+      </div>
+
 
     </div>
   </body>

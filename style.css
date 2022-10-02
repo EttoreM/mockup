@@ -10,6 +10,11 @@
 
 body {
   font-family: 'Roboto';
+  overflow: hidden;
+}
+
+div {
+  cursor: default;
 }
 
 .PageContainer {
@@ -19,6 +24,20 @@ body {
   width: 100%;
   height: 100%;
   overflow-y: scroll;
+}
+
+.bkg_map_nfvi {
+  background: url('./imgs/map_nfvi.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bkg_map_nfvi_heat {
+  background: url('./imgs/map_nfvi_heat.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .bkg_map_1 {
@@ -34,6 +53,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .bkg_map_3 {
   background: url('./imgs/map_mcr.png');
   background-size: cover;
@@ -41,6 +61,33 @@ body {
   background-position: center;
 }
 
+.bkg_map_before {
+  background: url('./imgs/map_before.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bkg_map_after {
+  background: url('./imgs/map_after.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bkg_API_1 {
+  background: url('./imgs/API.png') ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bkg_API_2 {
+  background: url('./imgs/API2.png') ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 .WelcomeMessage {
   position: fixed;
@@ -52,7 +99,7 @@ body {
   color: whitesmoke;
   padding: 2.505vw;
   width: 33%;
-  text-shadow: 0.1rem 0.1rem 0.1rem black;
+  text-shadow: 0.1vw 0.1vw 0.1vw black;
   text-align: center;
   line-height: 2.7555vw;
   border-radius: 0vw;
@@ -71,7 +118,7 @@ button {
 
 .DHSlogo {
   position: fixed;
-  top: 0rem;
+  top: 0vw;
   width: 16.7vw;
 }
 
@@ -79,8 +126,8 @@ button {
   position: fixed;
   top: 0vw;
   right: 0.835vw;
-  background-color: rgba(0,0,0,0.3);
-  padding: 0.835vw 0.835vw;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 1vw 0.7vw;
   display: flex;
 }
 
@@ -91,17 +138,19 @@ button {
 .Option2_down,
 .Option3_down {
   color: white;
-  font-size: 1.2525vw;
-  width: 14.6125vw;
+  font-size: 1.2vw;
+  width: 14.5vw;
   height: 2.505vw;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  /* justify-content: center; */
   margin: 0.2505vw 0vw;
-  cursor: default;
   position: fixed;
-  left: 0.835vw;
-  transition: all 0.2s;
+  left: 0.5vw;
+  transition: all 0.1s;
+  padding: 0.3vw 0.5vw 0.2vw 0.5vw;
 }
 
 .Option1_up:hover,
@@ -110,55 +159,54 @@ button {
 .Option1_down:hover,
 .Option2_down:hover,
 .Option3_down:hover {
-  box-shadow: 0rem 0rem 0.2vw rgba(0,0,0,0.7);
-  left: 1.1vw;
-  transition: all 0.2s;
+  box-shadow: 0vw 0vw 0.5vw rgba(0,0,0,0.7);
+  transition: all 0.1s;
 }
 
 .Option1_up {
   position: fixed;
-  top: 7vw;
-  background-color: rgb(57, 56, 139, 0.95);
+  top: 6vw;
+  background-color: rgb(77, 79, 118, 0.95);
 }
 
 .Option2_up {
   position: fixed;
-  top: 10vw;
+  top: 9.7vw;
   background-color: rgba(61, 134, 65, 0.95);
 }
 
 .Option3_up {
   position: fixed;
-  top: 13vw;
-  background-color: rgba(99, 61, 134, 0.95);
+  top: 13.4vw;
+  background-color: rgba(132, 50, 172, 0.95);
 }
 
 .Option2_down {
   position: fixed;
-  bottom: 4vw;
+  bottom: 0.5vw;
   background-color: rgba(61, 134, 65, 0.95);
 }
 
 .Option3_down {
   position: fixed;
   bottom: 1vw;
-  background-color: rgba(99, 61, 134, 0.95);
+  background-color: rgba(132, 50, 172, 0.95);
 }
 
 .Option1_down {
   position: fixed;
   bottom: 4vw;
-  background-color:  rgb(57, 56, 139, 0.95);
+  background-color: rgb(57, 56, 139, 0.95);
 }
 
-.EnterButton, .RegisterButton {
+.EnterButton,
+.RegisterButton {
   background-color: rgba(99, 61, 134, 1);
-  /* background-color: green; */
   position: fixed;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: 0rem 0rem 0.5rem rgba(0,0,0,0.7);
+  box-shadow: 0vw 0vw 0.4vw rgba(0, 0, 0, 0.7);
   font-size: 1.5vw;
   padding: 0.5845vw 2.5vw;
   border-radius: 3vw;
@@ -166,74 +214,200 @@ button {
   transition: all 0.2s;
 }
 
-.RegisterButton {
-  top: 90%;
-  width: 15vw;
-  font-size: 1.2vw;
+.EnterButtonUp {
+  top: 20%;
+  transition: all 0.5s;
 }
 
-.EnterButton:hover, .RegisterButton:hover {
-  /* background-color: rgb(0, 150, 0); */
+.RegisterButton {
+  top: 62%;
+  width: 10vw;
+  font-size: 1vw;
+  padding: 0.4vw;
+  transition: all 0.5s;
+}
+
+.RegisterButtonUp {
+  top: 36%;
+  width: 10vw;
+  font-size: 1vw;
+  padding: 0.4vw;
+  transition: all 0.5s;
+}
+
+.EnterButton:hover,
+.RegisterButton:hover {
   background-color: #1f733b;
   transition: all 0.2s;
 }
 
-.LoginButton {
+.LoginButton,
+.LoginButtonSmall,
+.MyAccount {
   background-color: white;
-  border: 0.2vw solid rgba(99, 61, 134, 1);
+  border: 0.15vw solid rgba(99, 61, 134, 1);
   color: rgba(99, 61, 134, 1);
-  /* background-color: green; */
   position: fixed;
-  top: 60%;
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: 0rem 0rem 0.5rem rgba(0,0,0,0.7);
+  box-shadow: 0vw 0vw 4.5vw rgba(0, 0, 0, 0.7);
   font-size: 1.5vw;
-  padding: 0.5845vw 2.5vw;
-  border-radius: 3vw;;
+  padding: 0.35vw 2.5vw;
+  border-radius: 3vw;
   width: 20vw;
+  justify-content: center;
+  transition: all 0.15s;
 }
 
-.Question1, .Question2 {
-  border-radius: 2.5vw;
-  background-color: rgb(57, 56, 139, 0.9);
-  width: 10.7775vw; 
+.LoginButtonUp {
+  top:28%;
+  transition: all 0.5s;
+}
+
+.LoginButtonSmall {
+  padding: 0vw;
+  width: 4.5vw;
+  top: 2.1vw;
+  left: 76vw;
+  box-shadow: none;
+  font-size: 0.9vw;
+  text-align: center;
+  border: 0.15vw solid rgba(99, 61, 134, 1);
+  height:1.5vw;
+  width: 7vw;
+  display: flex;
+  align-items: center;
+}
+
+.LogoutButtonSmall {
+  background-color: white;
+  border: 0.15vw solid rgba(99, 61, 134, 1);
+  color: rgba(99, 61, 134, 1);
+  position: fixed;
+  transform: translate(-50%, -50%);
+  border-radius: 3vw;
+  justify-content: center;
+  transition: all 0.15s;
+  padding: 0vw;
+  width: 4.5vw;
+  top: 1.2vw;
+  left: 76vw;
+  box-shadow: none;
+  font-size: 0.9vw;
+  text-align: center;
+  border: 0.15vw solid rgba(99, 61, 134, 1);
+  height:1.5vw;
+  width: 7vw;
+  display: flex;
+  align-items: center;
+}
+
+.MyAccount {
+  padding: 0vw;
+  width: 4.5vw;
+  top: 3.3vw;
+  left: 76vw;
+  box-shadow: none;
+  font-size: 0.8vw;
+  text-align: center;
+  border: 0.15vw solid rgba(99, 61, 134, 1);
+  height:1.5vw;
+  width: 7vw;
+  display: flex;
+  align-items: center;
+}
+
+.LoginButton:hover,
+.LoginButtonSmall:hover,
+.MyAccount:hover {
+  background-color: rgba(99, 61, 134, 1);
   color: white;
-  padding: 0.4175vw 1.2525vw;
+  transition: all 0.15s;
+}
+
+.Question {
+  border-radius: 2.5vw;
+  background-color: rgb(77, 79, 118, 0.9);
+  width: 13.5vw;
+  color: white;
   word-wrap: break-word;
   font-size: 0.7515vw;
-  cursor: default;
-  /* position: fixed; */
-}
-
-/* .Question1 {
-  top: 10.5vw;
-}
-
-.Question2 {
-  top: 14.7vw;
-} */
-
-.Question1:hover, .Question2:hover {
-  box-shadow: 0vw 0vw 0.334vw rgba(0,0,0,0.7);
-}
-
-.BluePanel{
   position: fixed;
-  top:9.75vw;
-  left:0.835vw;
-  width: 13.7775vw;
-  background-color: rgb(57, 56, 139, 0.7);
-  padding:0.4175vw;
+  left: 0.5vw;
+  transition: all 0.2s;
+  padding: 0.3vw 1vw;
+}
+
+.Q1_up {
+  top: 9.7vw;
+}
+
+.Q2_up {
+  top: 12.5vw;
+}
+
+.Q3_up {
+  top: 15.3vw;
+}
+
+.Q4_up {
+  top: 18.1vw;
+}
+
+.Q5_up {
+  top: 20.9vw;
+}
+
+.Q2_down {
+  bottom: 11.8vw;
+  opacity: 0.7;
+}
+
+.Q3_down {
+  bottom: 9.2vw;
+  opacity: 0.7;
+}
+
+.Q4_down {
+  bottom: 6.6vw;
+  opacity: 0.7;
+}
+
+.Q5_down {
+  bottom: 4vw;
+  opacity: 0.7;
+}
+
+.Q1_up:hover,
+.Q1_down:hover,
+.Q2_up:hover,
+.Q2_down:hover,
+.Q3_up:hover,
+.Q3_down:hover,
+.Q4_up:hover,
+.Q4_down:hover,
+.Q5_up:hover,
+.Q5_down:hover {
+  box-shadow: 0vw 0vw 0.334vw rgba(0, 0, 0, 0.7);
+  opacity: 0.9;
+}
+
+.BluePanel {
+  position: fixed;
+  top: 12.5vw;
+  left: 0.5vw;
+  width: 14.3vw;
+  background-color: rgb(77, 79, 118, 0.7);
+  padding: 0.5vw;
   font-size: 0.668vw;
   color: white;
   display: flex;
   flex-flow: column wrap;
   justify-content: left;
-  min-height: 16.7vw;
+  /* min-height: 16.7vw; */
   align-items: center;
 }
-
 
 .BluePanelItem {
   display: flex;
@@ -246,22 +420,24 @@ button {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding:0rem 0.5rem;
+  padding: 0vw 0.418;
+  /* justify-content: space-around; */
 }
 
-.GreenPanel{
+.GreenPanel {
   position: fixed;
-  top:12.75vw;
-  left:0.835vw;
-  width: 13.7775vw;
-  padding:0.4175vw;
+  top: 13.5vw;
+  left: 0.5vw;
+  width: 14.3vw;
+  
+  /* width: 13.7775vw; */
+  padding: 0.5vw;
   background-color: rgba(61, 134, 65, 0.5);
   font-size: 0.9185vw;
   color: white;
-  display: "flex";
+  display: 'flex';
   flex-direction: row;
   min-height: 16.7vw;
-  cursor: default;
 }
 
 .GreenPanelItem {
@@ -270,56 +446,101 @@ button {
   align-items: center;
   font-size: 0.668vw;
   padding: 0vw 0.4174vw;
+  margin: -0.8vw 0vw;
 }
 
 .GreenDS {
-  border-radius: 2vw;
-  background-color: rgba(61, 134, 65, 0.3);
+  border-radius: 0.2vw;
+  background-color: rgba(61, 134, 65, 0.6);
   color: white;
-  padding: 0.4174vw 0.835vw;
+  /* padding: 0.3vw 0.3vw; */
   display: inline-flex;
-  margin: 0.2505vw 0.0835vw;
-  max-width: 5.845vw;
-  font-size: 0.8vw;
-  width: 35%;
+  margin: 0.15vw 0.08vw;
+  /* max-width: 5.845vw; */
+  font-size: 0.7vw;
+  width: 31%;
   justify-content: center;
   text-align: center;
+  height:1.5vw;
+  align-items: center;
 }
 
 .GreenDS:hover {
-  box-shadow: 0vw 0vw 0.334vw rgba(0,0,0,0.5);
+  /* box-shadow: 0vw 0vw 0.334vw rgba(0, 0, 0, 0.5); */
+  background-color: rgba(61, 134, 65, 1);
 }
 
 .BlueDS {
   background-color: rgb(57, 56, 139, 0.5);
 }
 
+.PurplePanel {
+  position: fixed;
+  top: 17.2vw;
+  left: 0.5vw;
+  width: 14.5vw;
+  height: 32vw;
+  padding: 0.5vw;
+  background-color: rgba(132, 50, 172, 0.5);
+  font-size: 0.9185vw;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: flex-start;
+  padding-top: 1vw;
+}
+
+.Tool, .ToolClicked {
+  background-color: rgba(132, 50, 172, 0.7);
+  width: 70%;
+  height: 1.5vw;
+  border-radius: 2vw;
+  display: flex;
+  justify-content: center;
+  font-size: 0.9vw;
+  align-items: center;
+  margin:0.3vw;
+  font-size: 0.8vw;
+  transition: all 0.15s;
+}
+
+.ToolClicked {
+  background-color: rgba(132, 50, 172, 0.95);
+}
+
+.Tool:hover {
+  background-color: rgba(132, 50, 172, 0.95);
+  transition: all 0.15s;
+}
+
+
 .SearchBar {
   position: fixed;
-  top: 1.67vw;
+  top: 1vw;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 2.505vw;
-  border: 0.1vw solid rgb(61, 134, 65);
+  border: 0.15vw solid rgb(61, 134, 65);
   background-color: white;
   display: flex;
   align-items: center;
-  padding: 0.4175vw 1.2525vw;
+  padding: 0.2vw 1vw;
 }
 
 .InputSearch {
   border: none;
-  outline: none ! important;
+  outline: none !important;
   font-size: 1vw;
   width: 25vw;
 }
 
 .SearchIcon {
   background-color: transparent;
-  padding:0.5845vw;
+  padding: 0.5845vw;
   border-radius: 50%;
   margin: -0.2505vw;
-  margin-right: -1.044vw
+  margin-right: -1.044vw;
 }
 
 .SearchIcon:hover {
@@ -328,7 +549,7 @@ button {
 
 .searchResultContainer {
   position: fixed;
-  top:4.8vw;
+  top: 3.7vw;
   left: 50%;
   transform: translateX(-50%);
   width: 25.05vw;
@@ -341,18 +562,232 @@ button {
 
 .searchResultItem {
   background-color: white;
-  height:1.67vw;
+  height: 1.67vw;
   border-radius: 0.2505vw;
   padding: 0.4175vw 0.5845vw;
   display: flex;
   align-items: center;
   font-size: 1vw;
   margin: 0.0835vw;
-  cursor: default;
 }
 
 .searchResultItem:hover {
-  background-color: rgb(57, 56, 139, 0.5);
+  background-color: rgb(77, 79, 118, 0.9);
   color: white;
 }
 
+.Slider {
+  position: fixed;
+  top: 30.3vw;
+  left: 0.5vw;
+  padding: 1vw;
+  background-color: white;
+  border: 0.15vw solid rgb(57, 56, 139, 0.95);
+  border-radius: 0.5vw;
+  width: 13vw;
+}
+
+.SearchPC,
+.SearchPC_down,
+.SearchPC_bottom {
+  position: fixed;
+  top: 12.5vw;
+  left: 0.5vw;
+  border-radius: 2.505vw;
+  border: 0.15vw solid rgb(57, 56, 139, 0.95);
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 0vw 1vw;
+}
+
+.SearchPC_down {
+  top: 27.8vw;
+}
+
+.SearchPC_bottom {
+  top: 40vw;
+}
+
+.InputPC {
+  border: none;
+  outline: none !important;
+  font-size: 0.8vw;
+  width: 12.2vw;
+}
+
+.SearchIconPC {
+  background-color: transparent;
+  padding: 0.3vw;
+  border-radius: 50%;
+  /* margin: -0.2505vw; */
+  margin-right: -1.044vw;
+}
+
+.SearchIconPC:hover {
+  background-color: lightgrey;
+}
+
+.LearnMore {
+  position: fixed;
+  top: 5vw;
+  width: 15.5vw;
+  right: 0.835vw;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 1vw;
+  color: rgb(31, 30, 89);
+  font-size: 1.3vw;
+  text-align: center;
+}
+
+.LearnMore:hover {
+  box-shadow: 0vw 0vw 1vw rgba(0,0,0,0.3);
+}
+
+.ExtraInfo {
+  position:fixed;
+  top: 9vw;
+  width: 15.5vw;
+  min-height: 65%;
+  right: 0.835vw;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0.5vw 1vw;
+  color: rgb(31, 30, 89);
+  font-size: 0.7vw;
+  text-align: left;
+  color: rgb(100,100,100)
+}
+
+.Legend {
+  position: fixed;
+  bottom: 1vw;
+  right: 0.835vw;
+  padding: 1vw;
+  width: 15.5vw;
+  background-color: white;
+  opacity: 0.9;
+}
+
+.InfoBaloon, .InfoBaloon2 {
+  position: fixed;
+  top: 12.45vw;
+  left: 16vw;
+  background-color: rgba(255,255,255,0.8);
+  min-width: 10vw;
+  max-width: 13vw;
+  border-radius: 0.0vw;
+  padding: 0.5vw 1vw;
+  font-size: 0.9vw;
+}
+
+.InfoBaloon2 {
+  top: 21.5vw;
+  padding:0vw 0.5vw;
+  font-size: 0.7vw;;
+}
+
+.Service {
+  background-color: rgba(255,255,255,0.65);
+  border-radius: 0.65vw;;
+  padding: 0.8vw 0.1vw;
+  display: inline-flex;
+  width: 44%;
+  margin:0.25vw;
+  height:1.7vw;
+  justify-content: center;
+}
+
+.Service:hover {
+  background-color: rgba(255,255,255,0.8);
+}
+
+.BeforeAfter {
+  position: fixed;
+  left: 0.5vw;
+  top: 42.5vw;
+  width: 15.3vw;
+  display: flex;
+  text-justify: distribute-all-lines;
+  text-align: justify;
+}
+
+.BeforeAfterBtn, .BeforeAfterBtnActive {
+  background-color: white;
+  border: 0.15vw solid rgba(99, 61, 134, 1);
+  color: rgba(99, 61, 134, 1);
+  font-size: 0.9vw;
+  padding: 0.35vw 0.6vw;
+  border-radius: 0.6vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transition: all 0.15s;
+  text-align: justify;
+  align-items: center;
+  align-content: center;
+}
+
+.BeforeAfterBtnActive, .BeforeAfterBtn:hover {
+  background-color: rgba(61, 134, 65, 1);
+  color: white;
+  transition: all 0.15s;
+}
+
+.LoginBtnPopup {
+  position: fixed; 
+  top:34.5vw; 
+  left:22.5vw; 
+  width:10.3vw; 
+  height:1.55vw; 
+  background-color: rgb(79,79,123); 
+  color: white;
+  border-radius:1vw; 
+  display: flex; 
+  align-items: center; 
+  font-size: 0.8vw; 
+  justify-content: center;
+  transition: all 0.15s;
+}
+
+.LoginBtnPopup:hover {
+  background-color: rgba(61, 134, 65, 1);
+  transition: all 0.15s;
+}
+
+.DownArrow {
+  color: white;
+  position:fixed; 
+  top: 77%; 
+  left:50%; 
+  width: 10vw; 
+  transform: translateX(-50%);
+  opacity: 0.5;
+  transition: all 0.5s;
+  text-align: center;
+  font-size: 1vw;
+  text-shadow: 0vw 0vw 0.7vw rgba(0,0,0,0.7);
+}
+
+.DownArrow:hover {
+  top: 79%;
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.DownArrowClicked {
+  display: none;
+  transition: all 0.5s;
+}
+
+.Services {
+  position:fixed;
+  bottom: 0vw;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  background-color: rgba(255,255,255,0.3);
+}
+
+.ServicesUp {
+  transform: translate(-50%, 0%);
+  transition: all 0.5s;
+}
