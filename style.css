@@ -714,7 +714,7 @@ button {
 .BeforeAfter {
   position: fixed;
   left: 0.5vw;
-  top: 42.5vw;
+  top: 36.5vw;
   width: 15.3vw;
   display: flex;
   text-justify: distribute-all-lines;
