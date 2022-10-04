@@ -61,6 +61,13 @@ div {
   background-position: center;
 }
 
+.bkg_map_mcr_grey {
+  background: url('./imgs/map_mcr_grey.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .bkg_map_before {
   background: url('./imgs/map_before.png');
   background-size: cover;
@@ -76,6 +83,7 @@ div {
 }
 
 .bkg_API_1 {
+  background-color: rgb(250,250,250);
   background: url('./imgs/API.png') ;
   background-size: cover;
   background-repeat: no-repeat;
@@ -428,7 +436,7 @@ button {
   position: fixed;
   top: 13.5vw;
   left: 0.5vw;
-  width: 14.3vw;
+  width: 14.5vw;
   
   /* width: 13.7775vw; */
   padding: 0.5vw;
@@ -449,20 +457,22 @@ button {
   margin: -0.8vw 0vw;
 }
 
-.GreenDS {
+.GreenDS, .BlueDS {
   border-radius: 0.2vw;
   background-color: rgba(61, 134, 65, 0.6);
   color: white;
-  /* padding: 0.3vw 0.3vw; */
   display: inline-flex;
   margin: 0.15vw 0.08vw;
-  /* max-width: 5.845vw; */
   font-size: 0.7vw;
   width: 31%;
   justify-content: center;
   text-align: center;
   height:1.5vw;
   align-items: center;
+}
+
+.BlueDS {
+  background-color: rgb(77, 79, 118, 0.95);
 }
 
 .GreenDS:hover {
@@ -636,7 +646,7 @@ button {
   background-color: rgba(255, 255, 255, 1);
   padding: 1vw;
   color: rgb(31, 30, 89);
-  font-size: 1.3vw;
+  font-size: 1.2vw;
   text-align: center;
 }
 
@@ -735,7 +745,7 @@ button {
 
 .LoginBtnPopup {
   position: fixed; 
-  top:34.5vw; 
+  top:67.6%; 
   left:22.5vw; 
   width:10.3vw; 
   height:1.55vw; 

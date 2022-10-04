@@ -21,23 +21,15 @@
       <div class="SearchBar">
         <input class="InputSearch" placeholder="Search..." />
         <div class="SearchIcon">
-          <img src="./imgs/search.svg" style="width: 1.0855vw;" />
+          <img src="./imgs/search.svg" style="width: 1.0855vw;" onclick="location.href = '13.html'" />
         </div>
-      </div>
-
-      <!-- Search results -->
-      <div class="searchResultContainer">
-        <div class="searchResultItem">Result 1</div>
-        <div class="searchResultItem" onclick="location.href = '13.html'"><p>Sentinel 5P: NO<sub>2</sub> total column level 2 data</div>
-        <div class="searchResultItem">Result 3</div>
-        <div class="searchResultItem">Result 4</div>
       </div>
 
        <!-- Login / Register / Logout -->
        <div class="LoginButtonSmall">Login</div>
 
       <!-- Options -->
-      <div class="Option1_up" onclick="location.href = '2.html'">
+      <div class="Option1_up">
         <span style="display: block; font-size: 0.8vw;">I want to</span> Know more about
       </div>
       <div class="Option2_up">
@@ -47,8 +39,8 @@
       <!-- Green Panel-->
       <div class="GreenPanel">
         <div style="width: 100%; margin: 0.5vw;">Data Domains</div>
-        <div class="GreenDS" onclick="location.href = '5.html'">Flooding</div>
-        <div class="GreenDS">Heat</div>
+        <div class="BlueDS">Flooding</div>
+        <div class="BlueDS">Heat</div>
         <div class="GreenDS">Air Quality</div>
         <div class="GreenDS">Pollutants</div>
         <div class="GreenDS">Gov maps</div>
@@ -61,6 +53,10 @@
           <p style="width: 100%;">Neighbourhood Flood Vulnerability Index</p>
           <div style="width: 0.835vw;"></div>
           <img src="./imgs/info.png" style="width: 0.835vw;" />
+        </div>
+        <div class="GreenPanelItem" style="margin: 0.3vw 0vw;">
+          <div style="width: 7vw;"></div>
+          <img src="./imgs/slider.svg" style="width: 4vw;" />
         </div>
         <div class="GreenPanelItem">
           <img src="./imgs/switch_off.svg" style="width: 1.3vw;" />
@@ -91,6 +87,10 @@
           <div style="width: 0.835vw;"></div>
           <img src="./imgs/info.png" style="width: 0.835vw;" />
         </div>
+        <div class="GreenPanelItem" style="margin: 0.3vw 0vw;">
+          <div style="width: 7vw;"></div>
+          <img src="./imgs/slider.svg" style="width: 4vw;" />
+        </div>
         <div class="GreenPanelItem">
           <img src="./imgs/switch_off.svg" style="width: 1.3vw;" />
           <div style="width: 0.835vw;"></div>
@@ -104,12 +104,19 @@
       </div>
 
 
-      <!-- Search PostCoder -->
-      <div class="SearchPC_bottom">
+      <!-- Search PostCode -->
+      <div class="SearchPC_bottom" style="top:41.5vw">
         <input class="InputPC" placeholder="Enter location..." />
         <div class="SearchIconPC">
-          <img src="./imgs/search.svg" style="width: 1.0855vw;" onclick="location.href = '4.html'" />
+          <img src="./imgs/search.svg" style="width: 1.0855vw;" />
         </div>
+      </div>
+
+
+      <!-- Legend -->
+      <div class="Legend">
+        <img src="./imgs/legend2.png" style="width: 15vw;"/>
+        <img src="./imgs/legend3.png" style="width: 15vw;"/>
       </div>
 
 

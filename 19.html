@@ -27,7 +27,7 @@
 
       <!-- Login / Register / Logout -->
       <div class="LogoutButtonSmall">Logout</div>
-      <div class="MyAccount" onclick="location.href = '18.html'">My account</div>
+      <div class="MyAccount">My account</div>
 
       <!-- Options -->
       <div class="Option1_up" onclick="location.href = '2.html'">
@@ -36,14 +36,14 @@
       <div class="Option2_up">
         <span style="display: block; font-size: 0.8vw;">I want to</span> Explore more
       </div>
-      <div class="Option3_down" onclick="location.href = '20.html'">
+      <div class="Option3_down">
         <span style="display: block; font-size: 0.8vw;">I want to</span> Create a model
       </div>
 
       <!-- Green Panel-->
       <div class="GreenPanel">
         <div style="width: 100%; margin: 0.5vw;">Data Domains</div>
-        <div class="GreenDS" onclick="location.href = '5.html'">Flooding</div>    
+        <div class="GreenDS" onclick="location.href = '5.html'">Flooding</div>
         <div class="GreenDS">Heat</div>
         <div class="GreenDS">Air Quality</div>
         <div class="GreenDS">Pollutants</div>
@@ -58,24 +58,28 @@
           <div style="width: 0.835vw;"></div>
           <img src="./imgs/info.png" style="width: 0.835vw;" />
         </div>
+        <div class="GreenPanelItem" style="margin: 0.3vw 0vw;">
+          <div style="width: 7vw;"></div>
+          <img src="./imgs/slider.svg" style="width: 4vw;" />
+        </div>
         <div class="GreenPanelItem">
           <img src="./imgs/switch_off.svg" style="width: 1.3vw;" />
           <div style="width: 0.835vw;"></div>
-          <p style="width: 100%;">Remote sensing NO data</p>
+          <p style="width: 100%;">Ozone total column</p>
           <div style="width: 0.835vw;"></div>
           <img src="./imgs/info.png" style="width: 0.835vw;" />
         </div>
         <div class="GreenPanelItem">
           <img src="./imgs/switch_off.svg" style="width: 1.3vw;" />
           <div style="width: 0.835vw;"></div>
-          <p style="width: 100%;">Remote sensing PM<sub>2.5</sub> data</p>
+          <p style="width: 100%;">Aerosol optical depth</p>
           <div style="width: 0.835vw;"></div>
           <img src="./imgs/info.png" style="width: 0.835vw;" />
         </div>
         <div class="GreenPanelItem">
           <img src="./imgs/switch_off.svg" style="width: 1.3vw;" />
           <div style="width: 0.835vw;"></div>
-          <p style="width: 100%;">Remote sensing PM<sub>10</sub> data</p>
+          <p style="width: 100%;">Carbon monoxide total column</p>
           <div style="width: 0.835vw;"></div>
           <img src="./imgs/info.png" style="width: 0.835vw;" />
         </div>
@@ -108,7 +112,7 @@
 
       
       <!-- Learn More -->
-      <div class="LearnMore" onclick="location.href = '15.html'">Learn More</div>
+      <div class="LearnMore" onclick="location.href = '15.html'">Further info</div>
 
 
       <!-- Right column (Extra info) -->
@@ -118,6 +122,18 @@
       </div>
 
 
+      <!-- Legend -->
+      <div class="Legend">
+        <img src="./imgs/legend4.png" style="width: 15vw;"/>
+      </div>
+
+
+      <!-- Login / Register popup -->
+      <div style="position:fixed; height: 100%; width: 100%; top: 0vw; left: 0vw; background-color: rgba(0,0,0,0.6);" onclick="location.href = '20.html'">
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); box-shadow: 0vw 0vw 3vw rgba(0,0,0,1); border-radius: 3.2vw;">
+          <img src="./imgs/user_profile.png" />
+        </div>
+      </div>
 
 
     </div>
