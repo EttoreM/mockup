@@ -744,9 +744,9 @@ button {
 }
 
 .LoginBtnPopup {
-  position: fixed; 
-  top:67.6%; 
-  left:22.5vw; 
+  position: absolute; 
+  top:33vw; 
+  left:22.4vw; 
   width:10.3vw; 
   height:1.55vw; 
   background-color: rgb(79,79,123); 
