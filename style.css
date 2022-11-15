@@ -54,8 +54,16 @@ div {
   background-position: center;
 }
 
+.bkg_map_4 {
+  background: url('./imgs/map_leeds_grey_2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .bkg_map_3 {
-  background: url('./imgs/map_mcr.png');
+  /* background: url('./imgs/map_mcr.png'); */
+  background: url('./imgs/map_leeds.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -63,6 +71,13 @@ div {
 
 .bkg_map_mcr_grey {
   background: url('./imgs/map_mcr_grey.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bkg_map_leeds_grey {
+  background: url('./imgs/map_leeds_grey.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -77,6 +92,13 @@ div {
 
 .bkg_map_after {
   background: url('./imgs/map_after.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bkg_grey_background {
+  background-color: #cccccc;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -173,19 +195,19 @@ button {
 
 .Option1_up {
   position: fixed;
-  top: 6vw;
+  top: 5vw;
   background-color: rgb(77, 79, 118, 0.95);
 }
 
 .Option2_up {
   position: fixed;
-  top: 9.7vw;
+  top: 8.7vw;
   background-color: rgba(61, 134, 65, 0.95);
 }
 
 .Option3_up {
   position: fixed;
-  top: 13.4vw;
+  top: 12.4vw;
   background-color: rgba(132, 50, 172, 0.95);
 }
 
@@ -348,23 +370,23 @@ button {
 }
 
 .Q1_up {
-  top: 9.7vw;
+  top: 8.7vw;
 }
 
 .Q2_up {
-  top: 12.5vw;
+  top: 11.5vw;
 }
 
 .Q3_up {
-  top: 15.3vw;
+  top: 14.3vw;
 }
 
 .Q4_up {
-  top: 18.1vw;
+  top: 17.1vw;
 }
 
 .Q5_up {
-  top: 20.9vw;
+  top: 19.9vw;
 }
 
 .Q2_down {
@@ -403,7 +425,7 @@ button {
 
 .BluePanel {
   position: fixed;
-  top: 12.5vw;
+  top: 14.3vw;
   left: 0.5vw;
   width: 14.3vw;
   background-color: rgb(77, 79, 118, 0.7);
@@ -434,7 +456,7 @@ button {
 
 .GreenPanel {
   position: fixed;
-  top: 13.5vw;
+  top: 12.7vw;
   left: 0.5vw;
   width: 14.5vw;
   
@@ -541,7 +563,7 @@ button {
 .InputSearch {
   border: none;
   outline: none !important;
-  font-size: 1vw;
+  font-size: 0.88vw;
   width: 25vw;
 }
 
@@ -577,7 +599,7 @@ button {
   padding: 0.4175vw 0.5845vw;
   display: flex;
   align-items: center;
-  font-size: 1vw;
+  font-size: 0.88vw;
   margin: 0.0835vw;
 }
 
@@ -601,7 +623,7 @@ button {
 .SearchPC_down,
 .SearchPC_bottom {
   position: fixed;
-  top: 12.5vw;
+  top: 11.7vw;
   left: 0.5vw;
   border-radius: 2.505vw;
   border: 0.15vw solid rgb(57, 56, 139, 0.95);
@@ -612,7 +634,7 @@ button {
 }
 
 .SearchPC_down {
-  top: 27.8vw;
+  top: 27vw;
 }
 
 .SearchPC_bottom {
@@ -665,7 +687,10 @@ button {
   color: rgb(31, 30, 89);
   font-size: 0.7vw;
   text-align: left;
-  color: rgb(100,100,100)
+  color: rgb(100,100,100);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .Legend {
@@ -680,8 +705,8 @@ button {
 
 .InfoBaloon, .InfoBaloon2 {
   position: fixed;
-  top: 12.45vw;
-  left: 16vw;
+  top: 14.3vw;
+  left: 16.3vw;
   background-color: rgba(255,255,255,0.8);
   min-width: 10vw;
   max-width: 13vw;
@@ -691,7 +716,7 @@ button {
 }
 
 .InfoBaloon2 {
-  top: 21.5vw;
+  top: 20.3vw;
   padding:0vw 0.5vw;
   font-size: 0.7vw;;
 }
@@ -800,4 +825,25 @@ button {
 .ServicesUp {
   transform: translate(-50%, 0%);
   transition: all 0.5s;
+}
+
+.Dashboard {
+  position: fixed;
+  top: 5vw;
+  left: 17vw;
+  margin: 0.2505vw 0vw;
+}
+
+
+.RedPin {
+  width: 1vw;
+  position: fixed;
+  transform: translate(-50%, -100%); 
+  cursor: pointer;
+  transition: width 0.2s;
+}
+
+.RedPin:hover {
+  width: 2vw;
+  transition: width 0.2s;
 }
