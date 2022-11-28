@@ -57,7 +57,8 @@ div {
 .bkg_map_4 {
     /* background: url('./imgs/map_mcr_grey.png'); */
     /* background: url('./imgs/map_leeds_grey_2.png'); */
-    background: url('./imgs/map_newcastle_grey_2.png');
+    /* background: url('./imgs/map_newcastle_grey_2.png'); */
+    background: url('./imgs/map_plymouth_grey_2.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -66,7 +67,8 @@ div {
 .bkg_map_3 {
     /* background: url('./imgs/map_mcr.png'); */
     /* background: url('./imgs/map_leeds.png'); */
-    background: url('./imgs/map_newcastle.png');
+    /* background: url('./imgs/map_newcastle.png'); */
+    background: url('./imgs/map_plymouth.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -89,6 +91,13 @@ div {
 
 .bkg_map_newcastle_grey {
     background: url('./imgs/map_newcastle_grey.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bkg_map_plymouth_grey {
+    background: url('./imgs/map_plymouth_grey.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
