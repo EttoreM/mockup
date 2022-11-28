@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="PageContainer bkg_grey_background">
+
+      <!-- Top logos -->
+      <img
+        src="./imgs/DSH_logo_3.png"
+        onclick="location.href = 'index.html'"
+        class="DHSlogo"
+      />
+      <div class="NERClogo">
+        <img src="./imgs/NERC_logo.png" style="width: 9vw;" />
+        <div style="width: 0.835rem; display: flex;"></div>
+        <img src="./imgs/UOM_logo.png" style="width: 6.5vw; height: auto;" />
+      </div>
+
+      <!-- Search Bar -->
+      <div class="SearchBar">
+        <input class="InputSearch" placeholder="Search..." value="Automatic Urban and Rural Network (AURN) close to Bristol" />
+        <div class="SearchIcon">
+          <img src="./imgs/search.svg" style="width: 1.0855vw;" />
+        </div>
+      </div>
+
+      <!-- Login / Register / Logout -->
+      <div class="LogoutButtonSmall">Logout</div>
+      <div class="MyAccount" onclick="location.href = '18.html'">My account</div>
+
+      <!-- Options -->
+      <div class="Option1_up" onclick="location.href = '2.html'">
+        <span style="display: block; font-size: 0.8vw;">I want to</span> Know more about
+      </div>
+      <div class="Option2_up">
+        <span style="display: block; font-size: 0.8vw;">I want to</span> Explore more
+      </div>
+      <div class="Option3_up">
+        <span style="display: block; font-size: 0.8vw;">I want to</span> Create a model
+      </div>
+
+      <!-- Purple Panel-->
+      <div class="PurplePanel">
+        <div class="Tool">Jupyter Notebook</div>
+        <div class="Tool" style="cursor: pointer" onclick="location.href = '22.html'">APIs</div>
+        <div class="Tool">Correlation Analysis</div>
+        <div class="Tool">Openair</div>
+        <div class="Tool">Predictive Models</div>
+        <div class="Tool">Data Discovery</div>
+        <div class="Tool">Data import</div>
+        <div class="Tool">Data export</div>
+        
+      </div>
+
+      
+
+      <!-- Dashboard -->
+      <div class="Dashboard" style="height: 60%;">
+        <img src="./imgs/Dashboard_Bristol.png" style="width: calc(100vw - 19vw); height: 89vh;" />
+      </div>
+
+      <!-- Create a report -->
+      <button id="EnterButton" class="CreateReportButton" type="button" >
+        <p style="margin: -0.2vw 0vw;">Create a report</p>
+      </button>
+
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+    <script type="text/javascript" src="jquery.js"></script>
+  </head>
+  <body>
+    <div class="PageContainer bkg_map_1">
+      <!-- Top logos -->
+      <img
+        src="./imgs/DSH_logo_3.png"
+        onclick="location.href = 'index.html'"
+        class="DHSlogo"
+      />
+      <div class="NERClogo">
+        <img src="./imgs/NERC_logo.png" style="width: 9vw;" />
+        <div style="width: 0.835rem; display: flex;"></div>
+        <img src="./imgs/UOM_logo.png" style="width: 6.5vw; height: auto;" />
+      </div>
+
+      <div class="WelcomeMessage">
+        Digital services that deliver economic, societal and environmental
+        benefits across the UK
+      </div>
+
+      <button
+        id="EnterButton"
+        class="EnterButton"
+        onclick="location.href = '1.html'"
+        type="button"
+      >
+        <p style="margin: -0.2vw 0vw;">ENTER DSH</p>
+        <p style="font-size: 0.85vw; margin: -0.3vw;">As guest</p>
+      </button>
+      <button id="LoginButton" class="LoginButton" type="button">
+        <p style="margin: -0.2vw 0vw;">LOG-IN</p>
+        <p style="font-size: 0.85vw; margin: -0.3vw;">
+          Access your licensed data
+        </p>
+      </button>
+      <button id="RegisterButton" class="RegisterButton" type="button">
+        Register
+      </button>
+
+      <div id="DownArrow" class="DownArrow">
+        <img src="./imgs/DownArrow.svg" style="width: 70%;" />
+        <p>Access NERC services</p>
+      </div>
+
+      <div id="Services" class="Services">
+        <img src="./imgs/services.png" style="width:50vw;" />
+      </div>
+
+      <script>
+        $('#DownArrow').on('click', function (e) {
+          $(this).addClass('DownArrowClicked');
+          $('#RegisterButton').addClass('RegisterButtonUp');
+          $('#EnterButton').addClass('EnterButtonUp');
+          $('#LoginButton').addClass('LoginButtonUp');
+          $('#Services').addClass('ServicesUp')
+          // regbtn.addClass('RegisterButtonUp');
+
+        })
+      </script>
+    </div>
+  </body>
+</html>
